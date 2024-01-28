@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>pl.harpi.janus</groupId>
+    <artifactId>identity</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>identity-domain-api</artifactId>
+  <dependencies>
+    <dependency>
+      <groupId>pl.harpi</groupId>
+      <artifactId>lib-core-domain-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>pl.harpi.janus</groupId>
+      <artifactId>common-domain-api</artifactId>
+    </dependency>
+  </dependencies>
+</project>
