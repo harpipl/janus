@@ -71,7 +71,12 @@
       </dependency>
       <dependency>
         <groupId>pl.harpi.janus</groupId>
-        <artifactId>identity-infrastructure</artifactId>
+        <artifactId>identity-infrastructure-jpa</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>pl.harpi.janus</groupId>
+        <artifactId>identity-infrastructure-memory</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
