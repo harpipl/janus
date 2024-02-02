@@ -4,4 +4,4 @@ import lombok.Builder;
 import pl.harpi.lib.core.domain.Input;
 
 @Builder(toBuilder = true)
-public record CreateUserInput(String username, String password, String email) implements Input {}
+public record CreateUserInput(String username, String password, String email, String fullName) implements Input {}
