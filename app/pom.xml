@@ -74,10 +74,13 @@
 
   <profiles>
     <profile>
-      <id>jpa-postgresql</id>
+      <id>release</id>
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
+      <properties>
+        <ACTIVATED_PROFILE>release</ACTIVATED_PROFILE>
+      </properties>
       <dependencies>
         <dependency>
           <groupId>org.postgresql</groupId>
@@ -90,7 +93,10 @@
       </dependencies>
     </profile>
     <profile>
-      <id>jpa-h2</id>
+      <id>dev</id>
+      <properties>
+        <ACTIVATED_PROFILE>dev</ACTIVATED_PROFILE>
+      </properties>
       <dependencies>
         <dependency>
           <groupId>com.h2database</groupId>
@@ -102,18 +108,15 @@
         </dependency>
       </dependencies>
     </profile>
-    <profile>
-      <id>memory</id>
-      <dependencies>
-        <dependency>
-          <groupId>pl.harpi.janus</groupId>
-          <artifactId>identity-infrastructure-memory</artifactId>
-        </dependency>
-      </dependencies>
-    </profile>
   </profiles>
 
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
     <finalName>janus</finalName>
     <plugins>
       <plugin>
