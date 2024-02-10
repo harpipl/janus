@@ -108,6 +108,18 @@
         </dependency>
       </dependencies>
     </profile>
+    <profile>
+      <id>memory</id>
+      <properties>
+        <ACTIVATED_PROFILE>memory</ACTIVATED_PROFILE>
+      </properties>
+      <dependencies>
+        <dependency>
+          <groupId>pl.harpi.janus</groupId>
+          <artifactId>identity-infrastructure-memory</artifactId>
+        </dependency>
+      </dependencies>
+    </profile>
   </profiles>
 
   <build>
