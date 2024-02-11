@@ -21,9 +21,5 @@
             <groupId>pl.harpi.janus</groupId>
             <artifactId>identity-domain-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-        </dependency>
     </dependencies>
 </project>

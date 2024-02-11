@@ -5,7 +5,7 @@
   <parent>
     <groupId>pl.harpi</groupId>
     <artifactId>spring-boot-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <groupId>pl.harpi.janus</groupId>
   <artifactId>janus</artifactId>
@@ -18,7 +18,7 @@
     <module>db</module>
   </modules>
   <properties>
-    <core.version>1.0.7</core.version>
+    <core.version>1.0.11</core.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -78,11 +78,6 @@
         <groupId>pl.harpi.janus</groupId>
         <artifactId>identity-infrastructure-memory</artifactId>
         <version>${project.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>32.1.3-jre</version>
       </dependency>
       <dependency>
         <groupId>org.springdoc</groupId>

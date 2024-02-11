@@ -23,7 +23,7 @@
     </dependency>
     <dependency>
       <groupId>pl.harpi</groupId>
-      <artifactId>lib-core-infrastructure</artifactId>
+      <artifactId>lib-core-infrastructure-common</artifactId>
     </dependency>
     <dependency>
       <groupId>pl.harpi.janus</groupId>
@@ -54,19 +54,6 @@
       <artifactId>identity-domain-impl</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.liquibase</groupId>
-      <artifactId>liquibase-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-        <groupId>pl.harpi.janus</groupId>
-        <artifactId>db</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.springdoc</groupId>
       <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     </dependency>
@@ -90,6 +77,14 @@
           <groupId>pl.harpi.janus</groupId>
           <artifactId>identity-infrastructure-jpa</artifactId>
         </dependency>
+        <dependency>
+          <groupId>org.liquibase</groupId>
+          <artifactId>liquibase-core</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>pl.harpi.janus</groupId>
+          <artifactId>db</artifactId>
+        </dependency>
       </dependencies>
     </profile>
     <profile>
@@ -105,6 +100,14 @@
         <dependency>
           <groupId>pl.harpi.janus</groupId>
           <artifactId>identity-infrastructure-jpa</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>org.liquibase</groupId>
+          <artifactId>liquibase-core</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>pl.harpi.janus</groupId>
+          <artifactId>db</artifactId>
         </dependency>
       </dependencies>
     </profile>
