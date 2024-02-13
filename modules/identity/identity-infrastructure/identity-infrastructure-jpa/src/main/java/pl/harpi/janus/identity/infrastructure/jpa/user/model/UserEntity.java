@@ -8,7 +8,7 @@ import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import pl.harpi.lib.core.infrastructure.Identifiable;
+import pl.harpi.lib.core.domain.ports.outbound.Identifiable;
 import pl.harpi.lib.core.infrastructure.jpa.BaseEntity;
 
 @Getter
