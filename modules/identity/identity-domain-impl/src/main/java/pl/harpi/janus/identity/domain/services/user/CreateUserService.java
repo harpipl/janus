@@ -31,10 +31,9 @@ public class CreateUserService extends AbstractUserService implements CreateUser
     }
 
     val newUser = User.builder().username(input.username())
-            // .uid(....)
             .password(input.password())
             .email(input.email())
-            // .fullName(input.)
+            .fullName(input.fullName())
             .build();
 
     val savedUser = port.save(newUser);

@@ -18,7 +18,7 @@
     <module>db</module>
   </modules>
   <properties>
-    <core.version>1.0.11</core.version>
+    <core.version>1.0.13</core.version>
   </properties>
   <dependencyManagement>
     <dependencies>

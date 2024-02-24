@@ -9,7 +9,7 @@ import pl.harpi.janus.identity.infrastructure.jpa.user.model.UserEntity;
 import pl.harpi.lib.core.infrastructure.jpa.JpaAdapter;
 
 @Repository
-public class UserJpaAdapter extends JpaAdapter<UserEntity, User, String> implements UserPort {
+public abstract class UserJpaAdapter extends JpaAdapter<UserEntity, User, Long, String> implements UserPort {
   private final UserJpaRepository repository;
 
   public UserJpaAdapter(UserJpaRepository repository, UserJpaMapper mapper) {
