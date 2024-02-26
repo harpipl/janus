@@ -11,7 +11,7 @@ import pl.harpi.lib.core.infrastructure.jpa.JpaAdapter;
 import java.util.UUID;
 
 @Repository
-public abstract class UserJpaAdapter extends JpaAdapter<UserEntity, User, Long, UUID, String> implements UserPort {
+public class UserJpaAdapter extends JpaAdapter<UserEntity, User, Long, UUID, String> implements UserPort {
   private final UserJpaRepository repository;
 
   public UserJpaAdapter(UserJpaRepository repository, UserJpaMapper mapper) {
