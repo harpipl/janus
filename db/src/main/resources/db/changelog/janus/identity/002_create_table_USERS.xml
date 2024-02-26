@@ -10,7 +10,7 @@
             <column name="ID" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="UID" type="VARCHAR(32)">
+            <column name="UID" type="UUID">
                 <constraints nullable="false" unique="true"/>
             </column>
         </createTable>
