@@ -5,7 +5,7 @@
   <parent>
     <groupId>pl.harpi</groupId>
     <artifactId>spring-boot-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.4</version>
   </parent>
   <groupId>pl.harpi.janus</groupId>
   <artifactId>janus</artifactId>
@@ -17,18 +17,8 @@
     <module>modules</module>
     <module>db</module>
   </modules>
-  <properties>
-    <core.version>1.0.14</core.version>
-  </properties>
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>pl.harpi</groupId>
-        <artifactId>lib-core</artifactId>
-        <version>${core.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
       <dependency>
         <groupId>pl.harpi.janus</groupId>
         <artifactId>app</artifactId>
